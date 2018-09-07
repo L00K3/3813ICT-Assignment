@@ -1,0 +1,19 @@
+.tooltip .tooltiptext {
+    width: 120px;
+    background-color: black;
+    color: white;
+    font-size: var(--FontSize_Label);
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px 0;
+    display: none;
+
+    /* Position the tooltip */
+    position: fixed;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    display: inline;
+}

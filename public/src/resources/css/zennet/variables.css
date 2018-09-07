@@ -1,0 +1,45 @@
+/* Declare CSS Variables */
+:root {
+	/* Font Styling */
+	--FontSize_Heading1: 24pt;
+	--FontFamily_Heading1: initial;
+	--FontSize_Label: 18pt;
+	--FontFamily_Label: initial;
+	--FontSize_BodyText: 10pt;
+	--FontFamily_BodyText: initial;
+	--FontSize_Icons: 64px;
+	
+	/* Navigation Styling */
+	--NavBar_Margin: 10px;
+	--NavElement_Height: 110px;
+	
+	/* Color Styling */
+	--Color_Primary: #DFDFDF;
+	--Color_PrimaryHover: #FFFFFF;
+	--Color_PrimaryDisabled: #BFBFBF;
+	--Color_Secondary: #202020;
+	--Color_SecondaryHover: #404040;
+	--Color_SecondaryDisabled: #000000;
+	--Color_Text: #000000;
+	
+	/* Border Styling */
+	--Border_Radius: 12px;
+	--Border_Thickness: 0px;
+	--MaxSize_IncludingBorder: calc(100% - 2 * var(--Border_Thickness));
+}
+
+@media screen and (orientation: landscape) and (min-width: 769px)  {
+	/* Desktop Port */
+	:root {
+		/* Navigation Styling */
+		--NavBar_Size: 150px;
+		--NavToggle_Size: 72px;
+	}
+} @media screen and (orientation: portrait), screen and (max-width: 768px) {
+	/* Mobile Port */
+	:root {
+		/* Navigation Styling */
+		--NavBar_Size: 100%;
+		--NavToggle_Size: 128px;
+	}
+}

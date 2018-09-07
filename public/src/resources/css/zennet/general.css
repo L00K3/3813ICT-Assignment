@@ -1,0 +1,86 @@
+/* Set HTML To Take Up Full Available Space */
+body, html {
+	width: var(--MaxSize_IncludingBorder);
+	height: var(--MaxSize_IncludingBorder);
+}
+
+/*Set Body For Sliding Menu*/
+body {
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	background-color: var(--Color_SecondaryLight);
+	will-change: left;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	
+	/* CSS Animation */
+	transition: left 0.2s;
+}
+
+div, form, label, button, a, i, h1, h2, li, p, input {
+	/*Size Rules*/
+	width: var(--MaxSize_IncludingBorder);
+	height: var(--MaxSize_IncludingBorder);
+	
+	/*Border Styling*/
+	border: none;
+	border-radius: var(--Border_Radius);
+    border-width: var(--Border_Thickness);
+	border-color: transparent;
+	
+	/*Override Browser Styling*/
+	white-space: normal;
+	margin: 0px;
+	padding: 0px;
+	
+	/*Positioning*/
+	display: inline-block;
+	position: relative;
+}
+
+*:focus {
+	outline: none;
+}
+
+.primary {
+	background-color: var(--Color_Primary);
+	border-color: var(--Color_Primary);
+}
+
+.primary:disabled {
+	background-color: var(--Color_PrimaryDisabled);
+	border-color: var(--Color_PrimaryDisabled);
+}
+
+/*Sets Up Button Hover For When Mouse Is Hovering Over Button*/
+.primary-hover:not([disabled]):hover, .primary-hover:not([disabled]):active {
+	background-color: var(--Color_PrimaryHover);
+	border-color: var(--Color_PrimaryHover);
+}
+
+.secondary {
+	background-color: var(--Color_Secondary);
+	border-color: var(--Color_Secondary);
+}
+
+.secondary:disabled {
+	background-color: var(--Color_SecondaryDisabled);
+	border-color: var(--Color_SecondaryDisabled);
+}
+
+/*Sets Up Button Hover For When Mouse Is Hovering Over Button*/
+.secondary-hover:not([disabled]):hover, .secondary-hover:not([disabled]):active {
+	background-color: var(--Color_SecondaryHover);
+}
+
+/*Shadow Styling*/
+.shadow-hover:hover, .shadow-focus:focus {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.shadow {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.20), 0 3px 6px rgba(0,0,0,0.25);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}

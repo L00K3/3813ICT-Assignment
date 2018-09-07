@@ -1,0 +1,154 @@
+/*General Rules*/
+.text-header, .text-label, .text-body {
+	color: var(--Color_Text);
+	text-decoration: none;
+}
+
+.text-header {
+	min-height: var(--FontSize_Heading1);
+	font-size: var(--FontSize_Heading1);
+	line-height: calc(var(--FontSize_Heading1) + 8px);
+	text-align: center;
+}
+
+.text-label {
+	min-height: var(--FontSize_Label);
+	font-size: var(--FontSize_Label);
+	line-height: calc(var(--FontSize_Label) + 8px);
+	text-align: center;
+}
+
+.text-body {
+	min-height: var(--FontSize_BodyText);
+	font-size: var(--FontSize_BodyText);
+	line-height: calc(var(--FontSize_BodyText) + 8px);
+	text-align: left;
+}
+
+.paragraph, .textBox {
+	color: black;
+	background-color: white;
+	overflow: auto;
+}
+
+/*Content Element*/
+.container {
+	border: var(--Border_Thickness) solid var(--Color_Primary);
+}
+
+.wrapper {
+	width: calc(100% - 16px);
+	height: calc(100% - 16px);
+	margin: 8px;
+}
+
+.verticalAlign {
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+.paragraph {
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	padding: 2px 2px 2px 2px;
+	white-space: pre-wrap;
+}
+
+.error {
+	color: red;
+	background: white;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	padding: 2px 2px 2px 2px;
+	margin: 8px;
+	white-space: pre-wrap;
+}
+
+.error > h2 {
+	height: var(--FontSize_Heading1);
+	font-size: var(--FontSize_Heading1);
+	text-align: center;
+}
+
+.error > p {
+	height: calc(100% - var(--FontSize_Heading1));
+	font-size: var(--FontSize_Label);
+	text-align: left;
+}
+
+/*Text Box Element*/
+div.textBox {
+	text-indent: 2px;
+	text-align: start;
+	cursor: text;
+	-webkit-user-modify: read-write-plaintext-only;
+	-webkit-line-break: read-write-plaintext-only;
+	-ms-line-break: read-write-plaintext-only;
+	-moz-user-modify: read-write;
+}
+
+.textBox:empty:before {
+    content: attr(data-placeholder);
+    color: gray;
+}
+
+.textBox[type="password"]:not(:empty) {
+	-webkit-text-security: disc;
+}
+
+/*Input Field*/
+.input {
+    grid-template-columns: 160px 1fr;
+    grid-template-rows: 1fr;
+    display: grid;
+}
+
+.input > .label {
+    grid-column: 1 / 2;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.input > .textBox {
+    vertical-align: middle;
+    grid-column: 2 / 3;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+/*Label Element*/
+.label {
+	overflow: hidden;
+	border-color: var(--Color_Primary);
+}
+
+/*Button Element*//*Button Sub Class*/
+.button {
+	color: var(--Color_Text);
+	overflow: hidden;
+	-o-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+/*Character Rules*/
+.vertical {
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.horizontal {
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}

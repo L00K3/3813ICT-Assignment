@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta Data -->
+        <title id="docTitle"> Node Express Server 2019 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+        <meta charset="UTF-8">
+        
+        <!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="./resources/css/zennet/variables.css">
+		<link rel="stylesheet" type="text/css" href="./resources/css/zennet/general.css">
+		<link rel="stylesheet" type="text/css" href="./resources/css/zennet/accessibility.css">
+		<link rel="stylesheet" type="text/css" href="./resources/css/zennet/content.css">
+		<link rel="stylesheet" type="text/css" href="./resources/css/zennet/images.css">
+		<link rel="stylesheet" type="text/css" href="./resources/css/zennet/buttons.css">
+		<link rel="stylesheet" type="text/css" href="./resources/css/zennet/shapes.css">
+		<link rel="stylesheet" type="text/css" href="./resources/css/zennet/animated.css">
+		<link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+        
+        <!-- Scripts -->
+		<script src="./resources/js/JQUERY.js"></script>
+		<script src="./resources/js/zennet/constants.js"></script>
+		<script src="./resources/js/zennet/files.js"></script>
+		<script src="./resources/js/zennet/colors_flatui.js"></script>
+		<script src="./resources/js/zennet/animation.js"></script>
+		<script src="./resources/js/script.js"></script>
+		
+		<!-- Dynamic Resources -->
+		<link rel="stylesheet" type="text/css" href="./resources/css/login.css">
+		<script src="./resources/js/login.js"></script>
+    </head>
+    
+    <body>
+        <div id="Login_Wrapper" class="wrapper">
+            <div id="Login_Window_Wrapper" class="primary">
+                <label id="Login_Window_Banner" class="secondary text-header label"> Login </label>
+                <label id="Login_Window_Username_Label" class="secondary text-label label"> Email: </label>
+                <input id="Login_Window_Username_Input" class="secondary text-label textBox" type="text" placeholder="Email" />
+                <label id="Login_Window_Password_Label" class="secondary text-label label"> Passoword: </label>
+                <input id="Login_Window_Password_Input" class="secondary text-label textBox" type="password" placeholder="Password" />
+                <button id="Login_Window_Login_Button" class="secondary secondary-hover text-label button" onclick="login.send(this.parentElement)"> Login </button>
+                <div id="Login_Window_Login_Spinner" class="">  </div>
+            </div>
+        </div>
+    </body>
+</html>

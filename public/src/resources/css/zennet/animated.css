@@ -1,0 +1,144 @@
+/*Animation Objects*/
+@keyframes luminate{
+	0%{background: #311F04;}
+	16%{background: #613E07;}
+	32%{background: #915E0C;}
+	45%{background: #C27D0E;}
+	50%{background: #F39C12;}
+	55%{background: #C27D0E;}
+	67%{background: #915E0C;}
+	83%{background: #613E07;}
+	100%{background: #311F04;}
+}
+
+@-webkit-keyframes luminate{
+	0%{background: #311F04;}
+	16%{background: #613E07;}
+	32%{background: #915E0C;}
+	45%{background: #C27D0E;}
+	50%{background: #F39C12;}
+	55%{background: #C27D0E;}
+	67%{background: #915E0C;}
+	83%{background: #613E07;}
+	100%{background: #311F04;}
+}
+
+.animation {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	top: 50%;
+	margin-top: -50px;
+}
+
+.ani-ld-hex{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.ani-ld-hex.fra1 {
+	margin-left: -47px;
+	margin-top: -15px;
+}
+
+.fra1 > .shape > .hexagon {
+	background: #613E07;
+	animation-name: luminate;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	-webkit-animation-name: luminate;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 0s;
+}
+
+.ani-ld-hex.fra2 {
+	margin-left: -31px;
+	margin-top: -43px;
+}
+
+.fra2 > .shape > .hexagon {
+	background: #613E07;
+	animation-name: luminate;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-delay: 0.25s;
+	-webkit-animation-name: luminate;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 0.25s;
+}
+
+.ani-ld-hex.fra3 {
+	margin-left: 1px;
+	margin-top: -43px;
+}
+
+.fra3 > .shape > .hexagon {
+	background: #613E07;
+	animation-name: luminate;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-delay: 0.5s;
+	-webkit-animation-name: luminate;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 0.5s;
+}
+
+.ani-ld-hex.fra4 {
+	margin-left: 17px;
+	margin-top: -15px;
+}
+
+.fra4 > .shape > .hexagon {
+	background: #613E07;
+	animation-name: luminate;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-delay: 0.75s;
+	-webkit-animation-name: luminate;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 0.75s;
+}
+
+.ani-ld-hex.fra5 {
+	margin-left: 1px;
+	margin-top: 13px;
+}
+
+.fra5 > .shape > .hexagon {
+	background: #613E07;
+	animation-name: luminate;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	-webkit-animation-name: luminate;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 1s;
+}
+
+.ani-ld-hex.fra6 {
+	margin-left: -31px;
+	margin-top: 13px;
+}
+
+.fra6 > .shape > .hexagon {
+	background: #613E07;
+	animation-name: luminate;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-delay: 1.25s;
+	-webkit-animation-name: luminate;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 1.25s;
+}

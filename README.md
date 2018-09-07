@@ -1,8 +1,5 @@
-# 3813ICT-Assignment
 install node
 
-run the following script in the directory for windows:
-init.cmd
-
-run the following script in the directory for linux:
-init.sh
+run one of the following script in the directory:
+	For windows: init.cmd
+	For linux: init.sh
